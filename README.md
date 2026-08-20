@@ -1,4 +1,4 @@
-# FortiGate NSE4 Hands-On Lab (AWS)
+# FortiGate Hands-On Lab (AWS)
 
 A self-built FortiGate NSE4 lab hosted on AWS, covering identity authentication, 
 IPsec VPN, SSL inspection, and a full UTM security stack — built to validate 
