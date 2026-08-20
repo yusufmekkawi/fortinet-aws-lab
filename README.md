@@ -15,19 +15,19 @@ NSE4 exam domains hands-on rather than just through theory.
 
 ## What's covered
 
-- **Identity (LDAP)** — AD-integrated authentication; diagnosed and resolved a 
+- **Identity (LDAP)** , AD-integrated authentication; diagnosed and resolved a 
   Server 2025 LDAP signing/channel-binding rejection via event log analysis
-- **Remote Access VPN (IPsec Dialup)** — migrated from SSL-VPN, which Fortinet 
+- **Remote Access VPN (IPsec Dialup)** , migrated from SSL-VPN, which Fortinet 
   removed in FortiOS 7.6.3; resolved IKE proposal mismatches across multiple 
   client devices and a port-443 conflict with the admin GUI
-- **SSL/TLS Deep Inspection** — full CA trust chain working end-to-end with 
+- **SSL/TLS Deep Inspection** , full CA trust chain working end-to-end with 
   a self-signed enterprise CA
-- **Web Filtering** — category-based and quota-based blocking, tested live
-- **AntiVirus** — EICAR test file detected and quarantined
-- **Application Control** — differentiated policy across multiple apps 
+- **Web Filtering** , category-based and quota-based blocking, tested live
+- **AntiVirus** , EICAR test file detected and quarantined
+- **Application Control** , differentiated policy across multiple apps 
   (block, quarantine, pass)
-- **Intrusion Prevention** — live SQL injection signature triggered and dropped
-- **DoS Protection** — genuine ICMP flood detected and mitigated (46 sessions, 
+- **Intrusion Prevention** , live SQL injection signature triggered and dropped
+- **DoS Protection** , genuine ICMP flood detected and mitigated (46 sessions, 
   Critical severity)
 
 ## Key lessons (the parts that mattered more than the config steps)
@@ -37,9 +37,9 @@ NSE4 exam domains hands-on rather than just through theory.
 2. **"Strong(er) authentication required" isn't always what it looks like.** 
    Traced through Event IDs 2889 → 1535 to the actual LDAP signing requirement, 
    rather than guessing at GPO settings.
-3. **Windows `ping -f` doesn't mean flood mode** — it sets the Don't Fragment 
+3. **Windows `ping -f` doesn't mean flood mode** , it sets the Don't Fragment 
    bit. Real DoS testing needs a proper flood tool.
-4. **IKE proposals aren't universal** — a working tunnel on one client can 
+4. **IKE proposals aren't universal** , a working tunnel on one client can 
    fail on another due to differing default cipher/DH offers.
 
 ## Screenshots
