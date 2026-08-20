@@ -6,7 +6,7 @@ NSE4 exam domains hands-on rather than just through theory.
 
 ## Topology
 
-![Lab Topology](diagrams/topology.png)
+![Lab Topology](Diagram.jfif)
 
 - FortiGate-VM (PAYG, FortiOS 7.6.7) — dual-homed across a public and private subnet
 - Windows Server 2025 — Domain Controller + LDAP + Certificate Services
